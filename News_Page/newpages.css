@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    height: 70px;
+    background-color: #00808066;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    box-shadow: 0 0 4px #008080;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: auto;
+    font-size: 17px;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    color: black; 
+}
+nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00808066; 
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+nav ul li:hover::after {
+    cursor: pointer;
+    width: 100%; 
+}
+nav ul li.active {
+    color: #008080;
+}
+nav a img {
+    margin: 10px 90px;
+    width: 80px;
+    border-radius: 5px;
+}
+nav div {
+    margin: 20px 70px;
+    margin-left: auto;
+}
+#input {
+    padding: 3px;
+    font-family: 'Poppins';
+    height: 25px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: #cef1f1; 
+    color:  black; 
+    border: 2px solid #008080;
+}
+#submit{
+    padding: 3px;
+    font-family: 'Poppins';
+    height: 32px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: #cef1f1; 
+    color: #008080; 
+    border: 2px solid #008080;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #008080;
+}
+main{
+    padding-block: 20px;
+    background-color: #0080801c;
+}
+.newscontainer
+{
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newstile
+{
+    margin: 20px;
+    background-color: #0080801a;
+    height: 450px;
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid #00808045;
+    cursor: pointer;
+    font-family: 'Poppins';
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.newstile:hover{
+    transform: scale(1.015);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.newstile .imgd img{
+    height: 200px;
+    width: 400px;
+}
+.newstile .imgd img{
+    border-radius: 5px;
+}
+.title{
+    margin: 3px;
+    padding: 7px;
+    font-weight: 500;
+}
+.source{
+    margin-left: 3px;
+    padding: 7px;
+    font-size: small;
+}
+.dis{
+    margin: 3px;
+    padding: 7px;
+    font-size: small;
+    font-weight: 300;
+}
+
+

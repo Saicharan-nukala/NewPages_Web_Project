@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link rel="stylesheet" href="newpages.css">
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="reload()" target="_blank">
+            <img src="Logo1.png" alt="Logo">
+        </a>
+        <ul id="list">
+            <li id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+            <li id="Business and Economy" onclick="onNavItemClick('Business and Technology')">Business and Economy</li>
+            <li id="Technology" onclick="onNavItemClick('Technology')">Technology</li>
+            <li id="Education" onclick="onNavItemClick('Education')">Education</li>
+            <li id="Politics" onclick="onNavItemClick('Politics')">Political</li>
+        </ul>
+        <div>
+            <input type="text" id="input" placeholder="Eg. M.S.Dhoni">
+            <button id="submit">🔍</button>
+        </div> 
+    </nav>
+    <main>
+        <div class="newscontainer" id="newscontainer">
+        </div>
+        <template id="cards">
+            <div class="newstile">
+                <div class="imgd" >
+                    <img id="imgd"src="https://via.placeholder.com/400x200" alt="">
+                </div>
+                <div class="title" id="title">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, molestias.</p>
+                </div>
+                <div class="source" id="source">
+                    <p>BBB . 11-07-2024 . 5:00 AM</p>
+                </div>
+                <div class="dis" id="dis">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique inventore necessitatibus, aut molestiae eius tempore aspernatur quam ut doloribus repellat voluptatum amet, atque et numquam odit harum vitae, eligendi sequi?
+                    </p>
+                </div>
+        </template>
+    </main>
+    <script src="newpages.js"></script>
+</body>
+</html>
